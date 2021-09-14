@@ -1,0 +1,5 @@
+sp=25 Kp=0.30 Ki=0.1*0.4 Kd=1.2/0.4 le=0 i=0
+if :ap then :cruise=0 goto 3 else goto 1 end
+f=:RF e=F-sp de=e-le i=i+e ifi>100theni=100end o=Kp*e+Ki*i+Kd*de le=e
+if F>999 or e<2 then goto5 else :fwd=(o>0)*o :bck=(o<0)*-o goto3 end
+:ap=0 :fwd=0 :bck=0 goto1
