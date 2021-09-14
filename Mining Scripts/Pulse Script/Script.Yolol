@@ -1,6 +1,0 @@
-If :Mine then goto2 else goto1 end
-If :Mine then :Lsr1=1 :Lsr2=0 goto3 else goto1 end
-If :Mine then :Lsr1=0 :Lsr2=1 goto2 else goto1 end
-
-//:Mine = Mine Button
-//:Lsr1 and :Lsr2 Mining Lasers
