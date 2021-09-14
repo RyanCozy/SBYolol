@@ -1,0 +1,12 @@
+z=20 x=1000.000 y=25
+if :RF<x then :FcuForward=y*:RF/1000 goto3 end goto5
+if :RF<z then goto4 end goto2
+:FcuForward=0 :Range=0 :Approach=-1
+goto1
+
+// [Z] - Approach Limit [Changable]
+// [Y] - Approach coefficency [Changable]
+// :RF - RangeFinder Distance
+// :Range - Renamed from RangeFinderOnState
+// `Approach` is the name of the YOLOL Chip, 
+// and also a Hybrid button with off state `-1` and on state `0`
