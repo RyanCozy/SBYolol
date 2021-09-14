@@ -1,0 +1,6 @@
+MaxR=:MaxBatteryPower
+:GeneratorUnitRateLimit=:MinEPS+(MaxR-:StoredBatteryPower)/100 goto2
+
+// :MinEPS = Hybrid button with name "MinESP"
+// :MinEPS values On = 65
+// This allows you to have a pre-charged power when using Lasers
