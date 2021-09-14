@@ -1,7 +1,0 @@
-sp=13 Kp=0.2 Ki=0 Kd=0.5 le=0 int=0
-if :approach then :cruise=0 goto 3 else goto 1 end
-e=:Distance-sp de=e-le int=int+e o=Kp*e+(Ki*int)+(Kd*de) le=e
-if :Distance>999 or e<2 then :approach=0 goto7 end
-if o>0 then :FcuForward=o else :FcuForward=0 end
-if o<0 then :FcuBackward=-o else :FcuBackward=0 end
-if :approach then goto 3 else :FcuForward=0 :FcuBackward=0 goto1 end
