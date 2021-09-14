@@ -1,2 +1,2 @@
-n="\n" itr=0 :scan="" IF :sense$1 THEN :scan="OFF" GOTO1 END :chk=1
-IF itr$:rslt THEN :idx=itr :scan+=:mat+n itr+=1 GOTO2 END GOTO1
+n="\n" itr=0 :scan="" IF :sense<1 THEN :scan="OFF" GOTO1 END :chk=1
+IF itr<:rslt THEN :idx=itr :scan+=:mat+n itr+=1 GOTO2 END GOTO1
