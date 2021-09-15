@@ -1,0 +1,11 @@
+e=0 gens=20 cells=40 //set gens to the number of gens you have
+b=:Bat //set cells to the number of batteries you have
+g=gens*10 //  ---- By Gimbit ----
+//the space is so the EPS can be calculated
+//Uncomment the line below if using T3 gens
+//g=gens*12.5
+e=b-:Bat 
+:GURL= 100-:Bat/100
+if e>(6000/cells) then :GURL+=e/g end  goto2
+// :GURL is GeneratorUnitRateLimit
+// :Bat is StoredBatteryPower
